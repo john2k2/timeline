@@ -175,6 +175,8 @@ select {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn {
