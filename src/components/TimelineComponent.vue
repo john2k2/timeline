@@ -101,7 +101,7 @@ const initializeTimeline = () => {
         year: 'YYYY'
       }
     },
-    height: '200px',
+    height: '130px',
     groupHeightMode: 'fixed',
     itemsAlwaysDraggable: false
   }
@@ -331,6 +331,6 @@ onBeforeUnmount(() => {
 }
 
 :deep(.vis-timeline) {
-  min-height: 150px;
+  min-height: 120px;
 } /* Ajusta este valor según sea necesario */
 </style>
