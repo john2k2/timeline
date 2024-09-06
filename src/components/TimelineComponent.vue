@@ -189,7 +189,7 @@ onBeforeUnmount(() => {
 <style scoped>
 /* Contenedor principal del timeline */
 .timeline-wrapper {
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 10px;
 }
 
