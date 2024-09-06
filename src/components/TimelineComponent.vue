@@ -133,7 +133,7 @@ const updateTimelineWindow = () => {
   if (timeline) {
     const now = moment().startOf('hour')
     timeline.setWindow(now.toDate(), now.clone().add(6, 'hours').toDate())
-    customizeLabels() // Llamar después de actualizar la ventana del timeline
+    customizeLabels()
   }
 }
 
@@ -151,7 +151,7 @@ watch(
       items.clear()
       items.add(createTimelineItems(newReservations))
       updateTimelineWindow()
-      customizeLabels() // Llamar aquí después de actualizar los ítems
+      customizeLabels()
     }
   },
   { deep: true }
@@ -176,7 +176,7 @@ const moveTimeline = (direction) => {
     })
   }
 
-  customizeLabels() // Asegúrate de llamar a la función aquí para aplicar los estilos después de mover el timeline
+  customizeLabels()
 }
 
 onBeforeUnmount(() => {

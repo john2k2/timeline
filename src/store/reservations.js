@@ -19,7 +19,7 @@ export const useReservationsStore = defineStore('reservations', {
     addReservation(reservation) {
       const newId =
         this.reservations.length > 0 ? Math.max(...this.reservations.map((r) => r.id)) + 1 : 1
-      const createdAt = new Date().toISOString() // Guardar la fecha y hora de creación
+      const createdAt = new Date().toISOString() 
       this.reservations.push({ ...reservation, id: newId, createdAt })
       alert('Turno agregado con éxito')
     },
